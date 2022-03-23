@@ -55,6 +55,12 @@ body{
    transform: translate(-50%,-50%); 
 }
 
+
+
+/* .section:nth-child(2n+1)::before{
+    content: "<img src="img/wave.svg" alt="">";
+} */
+
 /*--- BUTTON ---*/
 
 button{
@@ -87,6 +93,11 @@ h1{
     font-size: 45px;
 }
 
+h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
 p{
     font-size: 14px;
 }
@@ -113,8 +124,6 @@ header .list-button{
     float: right;
 }
 header>*{
-    height: 35px ;
-    line-height: 35px;
     vertical-align: middle;
 }
 
@@ -158,7 +167,7 @@ header .main-nav ul li a:hover header .main-nav ul li a::after{
 
 /*--- HERO ---*/
 
-.hero{
+section.hero{
     position: relative;
     background-image: url(../img/jumbo.png);
     background-repeat: no-repeat;
@@ -168,19 +177,45 @@ header .main-nav ul li a:hover header .main-nav ul li a::after{
     text-align: center
 }
 
-.hero .box-text{
+section.hero .box-text{
     max-width:45%;
 }
 
-.hero .box-text p{
+section.hero .box-text p{
     margin-top: 30px;
     margin-bottom: 15px;
     
 }
 
-.hero .box-text .list-button button{
+section.hero .box-text .list-button button{
     margin-left: 15px;
 }
+
+/*--- SECTION ---*/
+
+section{
+    padding-top: 100px;
+    height: 40vh;
+}
+
+section .col{
+    float: left;
+    width: calc(100% / 2 );
+}
+
+section .col img{
+    vertical-align: middle;
+    width: 100%;
+}
+
+section .col .box-text{
+    width: 50%;
+    margin: 50px auto;
+    display: block;
+}
+
+
+
 
 
 
