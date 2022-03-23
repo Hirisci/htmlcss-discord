@@ -10,6 +10,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    color: var(--colore-secondario-testo);
 }
 
 /*------------ 
@@ -19,6 +20,7 @@ body{
  :root{
     --colore-primario-testo: #fff;
     --colore-secondario-testo: #23272a;
+    --colore-sfondo: #f6f6f6;
 }
 
 /* .debug header{
@@ -195,7 +197,6 @@ section.hero .box-text .list-button button{
 
 section{
     padding-top: 100px;
-    height: 40vh;
 }
 
 section .col{
@@ -210,7 +211,17 @@ section .col img{
 
 section .col .box-text{
     width: 50%;
-    margin: 50px auto;
+    margin: 75px auto;
+    display: block;
+}
+
+section:last-child{
+    background-color: var(--colore-sfondo);
+    text-align: center;
+}
+
+section:last-child::before{
+    content: "<img src="img/wave\.svg" alt="">";
     display: block;
 }
 
