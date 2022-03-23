@@ -20,6 +20,16 @@
     COMMON
  ------------*/
 
+ .container{
+     max-width: 1200px;
+     margin: auto;
+ }
+
+ .clear-fix::after{
+     content: "";
+     display: table;
+     clear: both;
+    }
 
 /*------------ 
     TAG SEMANTICI 
