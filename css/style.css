@@ -16,6 +16,18 @@
     --colore-testo: #fff;
 }
 
+.debug header{
+    background-color: lightcoral;
+}
+
+.debug header div{
+    background-color: lightblue;
+}
+
+.debug header nav{
+    background-color: aqua;
+}
+
 /*------------ 
     COMMON
  ------------*/
@@ -34,4 +46,39 @@
 /*------------ 
     TAG SEMANTICI 
 ------------*/
+
+/*--- HEADER ---*/
+header {
+    position: relative;
+    padding: 20px;
+}
+
+header .logo{
+    float: left;
+}
+
+header .main-nav ul{
+    text-align: center;
+}
+
+header .list-button{
+    float: right;
+}
+header>*{
+    height: 35px ;
+    line-height: 35px;
+    vertical-align: middle;
+}
+
+/*---LOGO---*/
+.logo img{
+    vertical-align: middle;
+}
+
+/*---MAIN NAV---*/
+
+header .main-nav ul li, header .main-nav ul li a{
+    display: inline-block;
+}
+
 
