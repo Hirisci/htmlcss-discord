@@ -58,6 +58,7 @@ body{
 /*--- BUTTON ---*/
 
 button{
+    text-transform: capitalize;
     height: 35px;
     padding: 0 20px;
     border-radius: 15px;
@@ -71,6 +72,11 @@ button{
 .btn-white{
     background-color: #fff;
     color: var(--colore-secondario-testo)
+}
+
+.btn-black{
+    background-color: var(--colore-secondario-testo);
+    color: var(--colore-primario-testo)
 }
 
 /*DA IMPELEMENTARE GLI HOVER DEI BUTTON*/
@@ -122,7 +128,7 @@ header .main-nav ul li a {
     text-decoration: none;
     color: inherit;
     display: block;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 
@@ -141,6 +147,17 @@ header .main-nav ul li a {
 header .main-nav ul li a:hover header .main-nav ul li a::after{
     display: block;
 } */
+
+/*--- HERO ---*/
+
+.hero{
+    background-image: url(../img/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+
 
 
 
