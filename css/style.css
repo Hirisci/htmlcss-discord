@@ -20,6 +20,7 @@ body{
  :root{
     --colore-primario-testo: #fff;
     --colore-secondario-testo: #23272a;
+    --colore-terziario-testo: #4d5c8b;
     --colore-sfondo: #f6f6f6;
 }
 
@@ -84,6 +85,11 @@ button{
 
 .btn-black{
     background-color: var(--colore-secondario-testo);
+    color: var(--colore-primario-testo)
+}
+
+.btn-blue{
+    background-color: var(--colore-terziario-testo);
     color: var(--colore-primario-testo)
 }
 
@@ -196,7 +202,7 @@ section.hero .box-text .list-button button{
 /*--- SECTION ---*/
 
 section{
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 section .col{
@@ -215,16 +221,35 @@ section .col .box-text{
     display: block;
 }
 
-section:last-child{
+section:nth-child(2n + 1){
     background-color: var(--colore-sfondo);
+}
+
+section:last-child{
     text-align: center;
 }
 
-section:last-child::before{
-    content: "<img src="img/wave\.svg" alt="">";
-    display: block;
+/*--- Footer ---*/
+
+footer{
+    background-color: var(--colore-secondario-testo);
+    padding: 30px 0;
 }
 
+footer hr {
+    color: var(--colore-terziario-testo);
+}
+
+footer .bot{
+    padding: 35px;
+}
+
+footer .bot .logo{
+    float: left;
+}
+footer .bot .list-button{
+    float: right;
+}
 
 
 
