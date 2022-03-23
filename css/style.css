@@ -8,15 +8,20 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 /*------------ 
     Variabili 
 ------------*/
 
  :root{
-    --colore-testo: #fff;
+    --colore-primario-testo: #fff;
+    --colore-secondario-testo: #23272a;
 }
 
-.debug header{
+/* .debug header{
     background-color: lightcoral;
 }
 
@@ -26,22 +31,30 @@
 
 .debug header nav{
     background-color: aqua;
-}
+} */
 
 /*------------ 
     COMMON
  ------------*/
 
- .container{
-     max-width: 1200px;
-     margin: auto;
- }
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
 
- .clear-fix::after{
-     content: "";
-     display: table;
-     clear: both;
-    }
+.clear-fix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.centrato{
+   position: absolute;
+   top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   
+}
 
 /*------------ 
     TAG SEMANTICI 
@@ -49,16 +62,13 @@
 
 /*--- HEADER ---*/
 header {
+    background-color: #3161e0;
     position: relative;
     padding: 20px;
 }
 
 header .logo{
     float: left;
-}
-
-header .main-nav ul{
-    text-align: center;
 }
 
 header .list-button{
@@ -80,5 +90,11 @@ header>*{
 header .main-nav ul li, header .main-nav ul li a{
     display: inline-block;
 }
+
+header .main-nav ul li a{
+
+}
+
+
 
 
