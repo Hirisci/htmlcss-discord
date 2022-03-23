@@ -58,6 +58,9 @@ body{
    transform: translate(-50%,-50%); 
 }
 
+i {
+    margin-right: 5px;
+}
 
 
 /* .section:nth-child(2n+1)::before{
@@ -93,7 +96,10 @@ button{
     color: var(--colore-primario-testo)
 }
 
-/*DA IMPELEMENTARE GLI HOVER DEI BUTTON*/
+button:hover{
+    box-shadow: 8px 15px rgba(0,0,0,.2);
+    
+}
 
 /*--- Testo syle ---*/
 
@@ -258,6 +264,34 @@ footer .col-big{
 
 footer hr {
     color: var(--colore-terziario-testo);
+}
+footer .lang{
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+footer .lang>* {
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer .col-big .col{
+    padding: 15px;
+}
+
+footer .col-big .col ul {
+    list-style: none;
+}
+
+footer .col-big .col ul li{
+    font-size: 12px;
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+
+footer .social i{
+    margin-left: 10px;
 }
 
 footer .bot{
