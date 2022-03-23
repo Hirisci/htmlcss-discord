@@ -81,7 +81,15 @@ button{
 
 /*DA IMPELEMENTARE GLI HOVER DEI BUTTON*/
 
+/*--- Testo syle ---*/
 
+h1{
+    font-size: 45px;
+}
+
+p{
+    font-size: 14px;
+}
 
 
 
@@ -151,13 +159,28 @@ header .main-nav ul li a:hover header .main-nav ul li a::after{
 /*--- HERO ---*/
 
 .hero{
+    position: relative;
     background-image: url(../img/jumbo.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
+    color: var(--colore-primario-testo);
+    text-align: center
 }
 
+.hero .box-text{
+    max-width:45%;
+}
 
+.hero .box-text p{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    
+}
+
+.hero .box-text .list-button button{
+    margin-left: 15px;
+}
 
 
 
