@@ -106,7 +106,15 @@ h2{
     margin-bottom: 15px;
 }
 
-p{
+footer h2{
+    color: var(--colore-terziario-testo);
+}
+
+h5{
+    color: var(--colore-terziario-testo);
+}
+
+p,h5{
     font-size: 14px;
 }
 
@@ -233,7 +241,19 @@ section:last-child{
 
 footer{
     background-color: var(--colore-secondario-testo);
+    color: var(--colore-primario-testo);
     padding: 30px 0;
+}
+
+footer .col{
+    float: left;
+    width: calc(100% / 4 - 10px);
+    margin: 5px;
+}
+
+footer .col-big{
+    width: calc((100%/4)*3);
+    float: left;
 }
 
 footer hr {
